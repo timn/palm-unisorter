@@ -1,0 +1,45 @@
+
+Uni Sorter
+==============================================================================
+
+** Introduction
+This PalmOS applications demonstrates and visualizes
+some of the standard sorting algorithms used today.
+
+To get more information please read the file help_main.txt in this directory.
+It is also available by tapping on the help button (the one with the ? in the
+upper right corner).
+
+This software is licensed under the GNU General Public License Version 2.
+Read the file LICENSE for more details.
+
+** Installation
+Please read the file INSTALL if you just want to install Uni Sorter on your
+PalmOS handheld device.
+
+
+** Compilation
+If you want to compile UniSorter you have to get a few things in place first.
+Those are:
+- Linux (it may work on other OS but it has only been tested on Linux)
+- PalmOS SDK 4 plus Updates (http://www.palmos.com/dev/tools/sdk40.html)
+- PilRC (http://www.ardiri.com/index.php?redir=palm&cat=pilrc)
+- PRC Tools (http://prc-tools.sourceforge.net/)
+  (This also contains the needed cross compilers, I have compiled on
+  i386 hardware)
+- Optional (but strongly recommended to not blast your Palm to Nirvana):
+  POSE (http://sourceforge.net/projects/pose)
+
+There is a Makefile that you should edit to fit your needs.
+If everything is in place give it a try and type "make" in the source
+directory. If that results in a new UniSorter.prc file then you are done
+and can start hacking the code. Happy Hacking.
+
+
+
+Tim Niemueller <tim@niemueller.de>
+Aachen, August 1st 2002
+
+
+
+$Id: README,v 1.1 2003/02/10 23:15:15 tim Exp $

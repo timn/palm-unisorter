@@ -1,0 +1,34 @@
+/**  Uni Sorter
+ *   Software to demonstrate and visualize some sorting algorithms
+ *   Copyright (C) 2002 by Tim Niemueller <tim@niemueller.de>
+ *   Website: http://www.niemueller.de/software/palm/unisorter/
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   Created 2002/07/26
+ */
+
+#include "UniSorter.h"
+
+form id FORM_about at (2 2 156 156)
+modal
+begin
+  title "About UniSorter"
+  button "OK" id BUTTON_about_ok at (center 140 50 12)
+  formbitmap at (20 20) bitmap BITMAP_logo
+  label "UniSorter v0.9" autoid at (55 prevtop+6) font 1
+  label "Demonstration and Visualization" autoid at (center prevbottom+8) font 0
+  label "of some sorting algorithms" autoid at (center prevbottom+1) font 0
+  label "(C) 2002 by Tim Niemueller" autoid at (center prevbottom+6) font 1
+  label "www.niemueller.de/uni" autoid at (center prevbottom+2) font 1
+  label "Licensed under" autoid at (center prevbottom+6) font 0
+  label "GNU General Public License (GPLv2)" autoid at (center prevbottom+1) font 0
+end

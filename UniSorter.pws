@@ -1,0 +1,21 @@
+
+[executer]
+RunInTerminal=true
+
+[Project DBase]
+ShowLocals=true
+
+[replace_text]
+0=TNDrawCharsToFitWidth
+1=cats
+
+[find_text]
+0=GadgetDrawTimeline
+1=DrawCharsToFitWidth
+2=db
+3=RectangleType
+
+[find_in_files]
+0=menuEvent
+1=DrawCharsToFitWidth
+2=AppLaunchWithCommand

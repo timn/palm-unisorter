@@ -1,0 +1,73 @@
+/**  Uni Sorter
+ *   Software to demonstrate and visualize some sorting algorithms
+ *   Copyright (C) 2002 by Tim Niemueller <tim@niemueller.de>
+ *   Website: http://www.niemueller.de/software/palm/unisorter/
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   Created 2002/07/26
+ */
+
+#include "UniSorter.h"
+
+bitmapfamily id BITMAP_logo "images/icon_sw.bmp" "" "" "images/icon_256c.bmp" compress
+
+bitmapcolor id BITMAP_info "images/info.bmp" compress
+bitmapcolor id BITMAP_info_clicked "images/info_clicked.bmp" compress
+bitmapcolor id BITMAP_help "images/help.bmp" compress
+bitmapcolor id BITMAP_help_clicked "images/help_clicked.bmp" compress
+bitmapcolor id BITMAP_run "images/next.bmp" compress
+bitmapcolor id BITMAP_run_clicked "images/next_clicked.bmp" compress
+bitmapcolor id BITMAP_reset "images/delete.bmp" compress
+bitmapcolor id BITMAP_reset_clicked "images/delete_clicked.bmp" compress
+
+string id HELP_main file "help_main.txt"
+
+
+menu id MENU_main
+begin
+  pulldown "Uni Matrix"
+  begin
+    menuitem "About" id MENUITEM_about "A"
+  end
+end
+
+alert id ALERT_ROMIncompatible
+error
+begin
+  title "System incompatoble"
+  message "System Version 3.5 or higher is required to run this application."
+  buttons "OK"
+end
+
+alert id ALERT_debug
+information
+begin
+  title "Fatal Error"
+  message "^1^2^3"
+  buttons "OK"
+end
+
+alert id ALERT_nomem
+warning
+begin
+  title "Insufficient Memory"
+  message "Could not allocate Memory. Please free some bytes and come back."
+  buttons "OK"
+end
+
+alert id ALERT_sorted
+information
+begin
+  title "Already sorted"
+  message "The field is already sorted. /palm is not dumb. Click on Reset (red X) and retry."
+  buttons "OK"
+end

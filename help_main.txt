@@ -1,0 +1,24 @@
+
+Uni Sorter
+
+This PalmOS applications demonstrates and visualizes
+some of the standard sorting algorithms used today.
+
+It supports the following algorithms:
+ - QuickSort
+ - QuickSort with Median
+ - QuickSort with Rects
+ - Insertion Sort
+ - Selection Sort
+ - Bubble Sort
+ - Merge Sort
+ - Heap Sort
+ - Shell Sort
+
+Comment on Algos:
+I played around mostly with QuickSort. There are right now three implementations of it. The basic one, which just takes the most right element as comparison element. One which locates the median of the first, the last and the center element and then puts the median-of-three element at last position, rest is done as usual. It does not really speed up though, guess the field of input numbers is just too small... And the third one is the same as the Median-Implementation but it draws rectangles around the partitions the algorithm will recurse to. Shell Sort is extremely fast on this field, a reason maybe that there is no good position in the source to put the delay, have study this a little bit more... InsertionSort, SelectionSort and BubbleSort don't offer any suprises.
+
+Basic usage:
+Select an algorithm on the right of the form. Then click on the button named "Speed" at the bottom. Select the delay in the algorithm. The more delay the more time you have to see the steps of the algorithm. See the source code of the application to understand where the delay has been placed. The more right the slider is the more delay there is. Maximum delay is one second between steps. Minimum is no delay (besides the delay given by hardware and needed operations like swapping and drawing...).
+
+Click on the "Run" button at the bottom on the very left (arrow button).You see what happens. Click on the "Reset" button (X-Button) to reset. You can stop the running sorting progress by clicking cancel. It will set delay to "No delay". We do not stop immediately since we would need a check in the sorting algorithms "Did the user press cancel". This has a major impact on performance so we don't do that here.

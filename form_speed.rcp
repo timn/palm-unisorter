@@ -1,0 +1,31 @@
+/**  Uni Sorter
+ *   Software to demonstrate and visualize some sorting algorithms
+ *   Copyright (C) 2002 by Tim Niemueller <tim@niemueller.de>
+ *   Website: http://www.niemueller.de/software/palm/unisorter/
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   Created 2002/07/26
+ */
+
+#include "UniSorter.h"
+
+form id FORM_speed at (2 80 156 78)
+modal
+begin
+  title "Speed"
+  label "Select Delay (in 10ths of a second)" autoid at (center 20)
+  slider id SLIDER_speed at (center prevbottom+3 114 15) value 5 min 0 max 10 pagesize 1
+  button "OK" id BUTTON_speed_ok at (81 prevbottom+8 50 12)
+  button "Cancel" id BUTTON_speed_cancel at (25 prevtop prevwidth prevheight)
+end
+
+

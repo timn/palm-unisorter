@@ -1,0 +1,46 @@
+/**  Uni Sorter
+ *   Software to demonstrate and visualize some sorting algorithms
+ *   Copyright (C) 2002 by Tim Niemueller <tim@niemueller.de>
+ *   Website: http://www.niemueller.de/software/palm/unisorter/
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   Created 2002/07/26
+ */
+
+#include "UniSorter.h"
+
+form id FORM_main at (0 0 160 160)
+menuid MENU_main
+begin
+  title "Uni Sorter"
+  button "" id BUTTON_help at (right@158 1 10 10) noframe graphical bitmapid BITMAP_help selectedbitmapid BITMAP_help_clicked
+  button "" id BUTTON_info at (prevleft-12 prevtop 10 10) noframe graphical bitmapid BITMAP_info selectedbitmapid BITMAP_info_clicked
+  gadget id GADGET_main at (2 18 125 125)
+  button "" id BUTTON_run at (2 prevbottom+3 11 12) noframe graphical bitmapid BITMAP_run selectedbitmapid BITMAP_run_clicked
+  button "" id BUTTON_reset at (prevright+3 prevtop 11 11) noframe graphical bitmapid BITMAP_reset selectedbitmapid BITMAP_reset_clicked
+  button "Cancel" id BUTTON_break at (center@63 prevtop 40 12) nonusable
+  button "Speed" id BUTTON_speed at (87 prevtop 40 12)
+  pushbutton "Quick" id BUTTON_quick at (130 18 28 10) group GROUP_algo
+  pushbutton "QMed" id BUTTON_quickm at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "QRect" id BUTTON_quickr at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Insert" id BUTTON_insert at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Select" id BUTTON_select at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Bubble" id BUTTON_bubble at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Shell" id BUTTON_shell at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Merge" id BUTTON_merge at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Heap" id BUTTON_heap at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Shake" id BUTTON_shaker at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Count" id BUTTON_count at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+  pushbutton "Radix" id BUTTON_radix at (prevleft prevbottom+1 prevwidth prevheight) group GROUP_algo
+end
+
+
